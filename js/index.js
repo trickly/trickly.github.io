@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('.about, .projects, .contact, .press').css({'visibility':'hidden'});
+  $('.about, .work, .projects, .contact, .press').css({'visibility':'hidden'});
 
-  $(window).scroll(function() { 
+  $(window).scroll(function() {
     var height = $(window).scrollTop();
 
     if (height > 190) {
@@ -9,11 +9,14 @@ $(document).ready(function() {
       $('.press').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
-    if (height > 1190) { 
+    if (height > 350) {
+      $('.work').css({"visibility": "visible"}).addClass('animated fadeIn');
+    }
+    if (height > 1000) {
       $('.projects').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
-    if (height > 2500) {
+    if (height > 2300) {
       $('.contact').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
@@ -30,6 +33,12 @@ $(document).ready(function() {
   $('body').on('click', '#contact', function() {
     $('html, body').animate({
         scrollTop: $(".contact").offset().top
+    }, 500);
+    return false;
+  });
+  $('body').on('click', '#work', function() {
+    $('html, body').animate({
+        scrollTop: $(".work").offset().top
     }, 500);
     return false;
   });

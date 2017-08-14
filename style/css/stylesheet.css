@@ -1,11 +1,11 @@
 @import url("/style/fonts/franklin/franklin.css");
-@import url(https://fonts.googleapis.com/css?family=Lekton);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 h1 {
   font: 80px 'franklin', sans-serif;
   margin: 0 auto; }
 
 p, li {
-  font: 16px "Lekton", monospace;
+  font: 16px "Roboto", monospace;
   line-height: 28px; }
 
 li {
