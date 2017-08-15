@@ -50,10 +50,13 @@ h6{
 .left{
   text-align:left;
 }
+.right{
+  text-align:right;
+}
 .header-section{
-  padding-top: 40vh !important;
-  padding-bottom: 20vh!important;
   text-align: left !important;
+  padding: 40vh 10vw 40vh 10vw;
+  text-align: center;
   background: #2f2f2f;
 }
 .footer-section{
@@ -83,9 +86,17 @@ h6{
   background: white;
   border-bottom:1px solid white;
 }
+.line-separator-dark{
+  height:2px;
+  width:100%;
+  text-align:center;
+  background: white;
+  border-bottom:2px solid #2f2f2f;
+}
 
-
-
+.rectangle{
+  border:1px solid #000;
+}
 .title {
   font: 80px "Merriweather", sans-serif;
   margin: 0 auto;
@@ -102,8 +113,6 @@ h6{
   padding: 3vh 3vw 3vh 3vw;
   text-align:left;
 }
-ul {
-  -webkit-padding-start: 0px; }
 
 .about__links {
   text-align: center; }
@@ -127,7 +136,14 @@ ul {
 #contact:hover {
   cursor: pointer; }
 
-
+.network{
+  padding-top:10vh;
+  padding-bottom:10vh;
+}
+.logo{
+  padding-left:2vw;
+  padding-right:2vw;
+}
 .item {
   text-align: center;
   margin: 20px auto; }
@@ -171,15 +187,26 @@ p {
 .about__title {
   text-align: center; }
 
+.about_description{
+  width:20vw;
+  text-align: left;
+}
+.about_facts{
+  width:40vw;
+  text-align: left !important;
+}
+.about_stuff{
+  padding: 0 0 0 0;
+  display:inline-flex;
+}
+.about_intro{
+  padding: 10vh 0 7vh 0;
+  display:inline-flex;
+}
 .section-title {
   border-width: 0 0 3px 0;
   display: inline-block;
   margin-right: 40px; }
-
-.about__description,
-.contact__desc {
-  padding: 0 240px;
-  margin-top: 50px; }
 
 a {
   color: black;
@@ -189,19 +216,6 @@ a {
   color: white;
   text-align: center;
   position: relative; }
-
-.mailto:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background-color: white;
-  content: "";
-  transition: width 0.2s; }
-
-.mailto:hover:after {
-  width: 100%; }
 
 .press {
   margin-top: 100px; }
@@ -230,13 +244,6 @@ a {
 
 .project__info:hover:after {
   width: 100%; }
-
-.about {}
-
-.projects {}
-
-.contact {}
-
 
 .list-title {
   font: 80px "Merriweather", sans-serif;
@@ -276,11 +283,13 @@ footer {
   footer a {
     border-bottom: thin dotted #000000; }
 
+.underline
 .underline-pink,
 .underline-blue,
 .underline-green {
   position: relative; }
 
+.underline:hover:after
 .underline-pink:hover:after,
 .underline-blue:hover:after,
 .underline-green:hover:after {
@@ -306,6 +315,15 @@ footer {
   content: "";
   transition: width 0.2s; }
 
+.underline:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  content: "";
+  transition: width 0.2s; }
 .underline-green:after {
   position: absolute;
   left: 0;
@@ -328,7 +346,7 @@ footer {
     .heading .heading-img {
       padding: 0;
       width: 300px; }
-  .about__description,
+  .about_description,
   .contact__desc {
     padding: 0 40px; }
   .project__title,

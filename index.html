@@ -15,100 +15,73 @@
 
 <body>
   <div class="content">
-    <div class="header-section section">
+    <div class="header-section">
         <div class="header">
           <h1 class="white">Patrick Lee</h1>
           <br/>
         </div>
         <ul class="white">
-          <li id="about" class="nav underline-pink">About</li>
-          <li id="work" class="nav underline-blue">Experiences</li>
-          <li id="projects" class="nav underline-green">Projects</li>
-          <li id="contact" class="nav underline-blue">Contact</li>
+          <li id="nav-about" class="nav underline">About</li>
+          <li id="nav-work" class="nav underline">Experiences</li>
+          <li id="nav-projects" class="nav underline">Projects</li>
+          <li id="nav-contact" class="nav underline">Contact</li>
         </ul>
         <div class="line-separator"></div>
       </div>
-    <div class="section">
+    <div class="section"  id="about">
       <div class="about">
-        <h3 class="">Hello World</h3>
-        <p class="about__description">
-            Word words words
-            <a href="https://www.google.com" class="a__pink underline-pink">This is Google</a>
-        </p>
-        <p class="about__description">
-        <ul class="about__links">
-          <li class="about__link">
-            <a href="https://github.com/trickly" class="a__pink underline-pink">
-              Github
-            </a>
-          </li>
-          <li class="about__link">
-            <a href="https://www.linkedin.com/in/patrick-lee-248515b5" class="a__pink underline-pink">
-              LinkedIn
-            </a>
-          </li>
-          <li class="about__link">
-            <a href="./resume.pdf" class="a__pink underline-pink">
-              Resume
-            </a>
-          </li>
-        </ul>
+        <h3 class="">Hey</h3>
+        <h6 class="about_intro">I'm Patrick, a student at Western University studying Software Engineering and Business (HBA @ the Ivey School of Business).</h6>
+        <div class="about_stuff">
+          <div class="about_description">
+            <br/>
+            <h6 class="right">
+              Some things about me:
+            </h6>
+          </div>
+          <div class="about_facts">
+            <ul>
+              <li><h6 class="left">Born in Seoul & grew up in the Greater Toronto Area.</h6></li><br/>
+              <li><h6 class="left">Avid rap and RnB listener</h6></li><br/>
+              <li><h6 class="left">Terrible gamer, but a team player</h6></li><br/>
+              <li><h6 class="left">Stubborn NBA fan</h6></li><br/>
+              <li><h6 class="left">Inconsistent gym member</h6></li>
+            </h6>
+          </ul>
+          </div>
+        </div>
+        <div class="center network">
+          <a href="https://github.com/trickly" class="logo">
+            <img width='48' src="./img/github.png"/></a>
+          <a href="https://www.linkedin.com/in/patrick-lee-248515b5" class="logo">
+            <img width='48' src="./img/linkedin.png"/></a>
+          <a href="./resume.pdf" class="logo">
+            <img width='48' src="./img/resume.png"/></a>
+          <a href="mailto:patrick.lee.96@gmail.com" class="logo">
+            <img width='48' src="./img/email.png"/></a>
+        </div>
       </div>
+      <div class="line-separator-dark" id="line-1"></div>
     </div>
 
-    <div class="section">
-      <div class="education">
-        <h3 class="">Education</<h3>
-        <br/>
-        <ul class="experience-list">
-          <li class="row">
-            <div class="experience-img">
-              <img src="./img/200x200.png"></a>
-            </div>
-            <div class="experience-desc">
-              <h5 class="left">HBA, Honours Business Administration | <strong>Ivey Business School</strong></h5>
-              <p class="left">Enrolled in dual-degree program</p>
-            </div>
-          </li>
-          <li class="row">
-            <div class="experience-img">
-              <img src="./img/200x200.png"></a>
-            </div>
-            <div class="experience-desc">
-              <h5 class="left">BESc, Software Engineering | <strong>Western University</strong></h5>
-              <p class="left">a very high gpa!</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="section">
+    <div class="section" id="work">
       <div class="work">
         <h3 class="">Experiences</<h3>
         <br/>
         <ul class="experience-list">
           <li class="row">
-            <div class="experience-img">
-              <img src="./img/200x200.png"></a>
-            </div>
             <div class="experience-desc">
               <h5 class="left">Software Engineer Intern | <strong>London Hydro</strong></h5>
               <p class="left">workworkworkwowrk</p>
             </div>
           </li>
           <li class="row">
-            <div class="experience-img">
-              <img src="./img/200x200.png"></a>
-            </div>
             <div class="experience-desc">
               <h5 class="left">Software Developer | <strong>Developers Foundation</strong></h5>
               <p class="left">workworkworkwowrk</p>
             </div>
           </li>
           <li class="row">
-            <div class="experience-img">
-              <img src="./img/200x200.png"></a>
-            </div>
             <div class="experience-desc">
               <h5 class="left">Software Developer Intern | <strong>Cogniframe</strong></h5>
               <p class="left">workworkworkwowrk</p>
@@ -116,8 +89,9 @@
           </li>
         </ul>
       </div>
+      <div class="line-separator-dark" id="line-2"></div>
     </div>
-    <div class="section">
+    <div class="section"  id="projects">
       <div class="projects">
         <h3 class="">Projects</<h3>
         <br/>
@@ -149,15 +123,15 @@
         </ul>
       </div>
     </div>
-    <div class="footer-section section">
+    <div  id='contact' class="footer-section section">
       <div class="contact white">
         <h3 class="contact-title ">Let's talk</h3>
         <br/>
         <div class="contact-links">
-          <h6 class=""><a href="https://github.com/trickly" class="white underline-pink">
+          <h6 class=""><a href="https://github.com/trickly" class="white underline">
             Github</a>
             <small> | </small>
-          <a href="https://www.linkedin.com/in/patrick-lee-248515b5" class="white underline-pink">
+          <a href="https://www.linkedin.com/in/patrick-lee-248515b5" class="white underline">
             LinkedIn</a>            <small> | </small>
           <a href="mailto:patrick.lee.96@gmail.com" class="mailto">
             Email</a></h6>
