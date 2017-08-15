@@ -8,23 +8,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="description" content="Patrick Lee - Studying SoftEng + BUSINESS @ WesternU"/>
       <meta name="robots" content="index,follow"/>
-      <link rel="shortcut icon" href="./img/fav.ico"/>
+      <link rel="shortcut icon" href="./img/favicon.ico"/>
       <link rel="fav" href="./img/fav.png"/>
       <title>Patrick Lee - SE & BUS Student @ UWO</title>
   </head>
 
 <body>
-  <div class="content">
+  <div class="container">
     <div class="header-section">
         <div class="header">
           <h1 class="white">Patrick Lee</h1>
           <br/>
         </div>
         <ul class="white">
-          <li id="nav-about" class="nav underline">About</li>
-          <li id="nav-work" class="nav underline">Experiences</li>
-          <li id="nav-projects" class="nav underline">Projects</li>
-          <li id="nav-contact" class="nav underline">Contact</li>
+          <li id="nav-about" class="nav underline"><h6>ABOUT</h6></li>
+          <li id="nav-work" class="nav underline"><h6>EXPERIENCES</h6></li>
+          <li id="nav-projects" class="nav underline"><h6>PROJECTS</h6></li>
+          <li id="nav-contact" class="nav underline"><h6>CONTACT</h6></li>
         </ul>
         <div class="line-separator"></div>
       </div>
@@ -98,26 +98,66 @@
         <ul>
           <li class="row">
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <a href="#" data-target="#p1"class="hcaption"><img height="250" src="./img/facetag.png"></a>
+              <div id="p1" class="project-desc hide">
+                <div class="center" >
+                  <button type="button"> <a href="https://devpost.com/software/facetag-pmuhy0" class="white"> DevPost </a></button>
+                  <button type="button"> <a href="https://github.com/Arjun96/Nhacks"  class="white"> Github </a></button>
+                </div>
+                <p></br>
+                  <strong>FaceTag</strong>
+                </br></br>
+                  Android | Java | C# | SQL | ASP.NET Core <br/><br/>
+                </p>
+              </div>
             </div>
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <p></br>
+                Android app to make networking more fun and interactive for the users.<br/><br/>
+                At an event? Take a picture of the friend you just made and collect points!.<br/><br/>
+                Winner of the Most Promising Future Startup Award @ NHacks 2016.
+              </p>
             </div>
           </li>
           <li class="row">
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <p><br/>
+                A local Wi-fi multiplayer 2-D shooter with gravity-focused physics.<br/><br/>
+                Become a mech and aim at your friends while moving across destructible planets.
+                </p>
             </div>
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <a href="#" data-target="#p2"class="hcaption"><img height="250" src="./img/mechwreck.png"></a>
+              <div id="p2" class="project-desc hide">
+                <div class="content">
+                  <button type="button"> <a href="https://github.com/trickly/mech_wreck" class="white"> Github </a></button>
+                </div>
+                <p></br>
+                  <strong>Mechwreck</strong>
+                </br></br>
+                   Java | libGDX <br/><br/>
+                </p>
+              </div>
             </div>
           </li>
           <li class="row">
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <a href="#" data-target="#p3"class="hcaption"><img height="250" src="./img/minigames.png"></a>
+              <div id="p3" class="project-desc hide">
+                <div class="content">
+                  <button type="button"> <a href="https://github.com/trickly/MiniGames" class="white"> Github </a></button>
+                </div>
+                <p></br>
+                  <strong>Minigames</strong>
+                </br></br>
+                   C# | Unity <br/><br/>
+                </p>
+              </div>
             </div>
             <div class="project">
-              <img src="./img/350x250.png"></a>
+              <p><br/><br/>
+                A set of mini games, unified by a user account system and user configurations.<br/><br/>
+                </p>
             </div>
           </li>
         </ul>
@@ -143,4 +183,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/jquery.hcaptions.js"></script>
+
 </html>

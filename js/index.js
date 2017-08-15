@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $('#about, #work, #projects, .press, #line-separator-dark').css({'visibility':'hidden'});
-
+  $('.hcaption').hcaptions({
+    effect: "fade",
+    direction: "bottom"
+  });
   $(window).scroll(function() {
     var height = $(window).scrollTop();
     var about = $('#about').position();
