@@ -24,18 +24,21 @@ h1{
   margin: 0 auto;
   text-align: center;
   line-height: 12vh;
+  font-weight: 400;
 }
 h2{
   font: 8vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 8vh;
+  font-weight: 900;
 }
 h3{
   font: 6vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 6vh;
+  font-weight: 900;
 }
 h4{
   font: 4vh "Merriweather", sans-serif;
@@ -44,22 +47,39 @@ h4{
   line-height: 4vh;
 }
 h5{
-  font: 3vh "Merriweather", sans-serif;
+  font: 3.5vh "Helvetica", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3.5vh;
+}
+h6{
+  font: 3vh "Helvetica", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 3vh;
 }
-h6{
-  font: 2.5vh "Roboto", sans-serif;
-  margin: 0 auto;
+
+p {
   text-align: center;
+  font: 2.5vh "Helvetica", sans-serif;
   line-height: 2.5vh;
+
 }
 
 span{
-  font: 2vh "Roboto", sans-serif;
+  font: 2vh "Helvetica", sans-serif;
   text-align: left;
   margin: 0 auto;
+}
+a{
+  font: 2vh "Helvetica", sans-serif;
+}
+ul{
+  list-style-type: none;
+  line-height: 3vh;
+}
+li{
+  margin:0 0 1.5vh 0;
 }
 .white{
   color:white;
@@ -114,11 +134,12 @@ span{
 .rectangle{
   border:1px solid #000;
 }
-.title {
-  font: 80px "Merriweather", sans-serif;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 80px;
+.v-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+.v-center-container{
+  display: table;
 }
 .experience-list{
   display:inline-grid;
@@ -139,15 +160,25 @@ span{
   padding: 0 15px; }
 
 
+.row {
+  padding-top: 3vh;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+}
 .project {
-  height:250px;
-  width:350px;
+  display:inline-block;
+  width:30vw;
   padding: 1vh;
 }
+.project a{
+  width:30vw;
+}
 .project p{
-  font-size: 2vh;
+  font-size: 2.5vh;
   text-align: center;
-  line-height: 2.5vh;
+  line-height: 3vh;
 }
 .project-desc{
   padding:1vh 0.5vw 1vh 0.5vw;
@@ -155,11 +186,6 @@ span{
   background-color: white;
 
 }
-.row {
-  padding-top: 3vh;
-  display:inline-flex;
-}
-
 #work:hover,
 #about:hover,
 #projects:hover,
@@ -173,6 +199,9 @@ span{
 .logo{
   padding-left:2vw;
   padding-right:2vw;
+}
+.logo img{
+  width: 5vw;
 }
 .item {
   text-align: center;
@@ -208,10 +237,6 @@ span{
 .nav:hover:after {
   width: 100%; }
 
-
-p {
-  text-align: center;
-  font-size: 2vh}
 
 .about__title {
   text-align: center; }
@@ -252,58 +277,6 @@ a {
 .home {
   margin-bottom: 100px; }
 
-.project__info,
-.project__info--desc {
-  font-weight: normal;
-  text-align: left; }
-
-.project__info {
-  color: #348c45;
-  position: relative; }
-
-.project__info:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background-color: #348c45;
-  content: "";
-  transition: width 0.2s; }
-
-.project__info:hover:after {
-  width: 100%; }
-
-.list-title {
-  font: 80px "Merriweather", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-top: 80px; }
-
-.project__title,
-.project__desc,
-.project__info {
-  display: inline-block;
-  vertical-align: text-top; }
-
-.project__title {
-  text-align: center;
-  position: absolute;
-  right: 50%;
-  font: 26px 'Merriweather', sans-serif;
-  margin-right: 0; }
-
-.project__desc {
-  position: relative;
-  left: 20%;
-  width: 20vw; }
-
-.heading-img {
-  width: 320px;
-  vertical-align: middle;
-  transition: all ease 0.2s;
-  display: inline-block;
-  padding: 0 100px; }
 
 footer {
   position: fixed;
