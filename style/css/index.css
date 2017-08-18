@@ -2,12 +2,7 @@ body{
   display:block;
   margin: 0px !important;
 }
-.container {
-  height: 100vh;
-  background-color: #F4F7F5;
-  color: #222222;
-  justify-content: center;
-}
+
 button {
     background-color: #2f2f2f;
     border: none;
@@ -41,35 +36,54 @@ h4{
   font: 4vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
-  line-height: 4vh;
+  line-height: 5vh;
 }
 h5{
   font: 3vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
-  line-height: 3vh;
+  line-height: 4vh;
 }
 h6{
-  font: 2.5vh "Roboto", sans-serif;
+  font: 2.5vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 2.5vh;
 }
 
 span{
-  font: 2vh "Roboto", sans-serif;
+  font: 2vh "Merriweather", sans-serif;
   text-align: left;
   margin: 0 auto;
 }
-.white{
-  color:white;
+
+a {
+  color: black;
+  text-decoration: none; }
+p {
+  font: 2.5vh "Merriweather", sans-serif;
+  margin: 0 auto;
+  line-height: 3vh;
 }
-.left{
-  text-align:left;
+
+footer {
+  position: fixed;
+  bottom: 2%;
+  right: 2%; }
+footer a {
+  border-bottom: thin dotted #000000;
 }
-.right{
-  text-align:right;
+.container {
+  height: 100vh;
+  background-color: #F4F7F5;
+  color: #222222;
+  justify-content: center;
 }
+
+.section {
+  padding: 10vh 10vw 0vh 10vw;
+  text-align: center;
+ }
 .header-section{
   text-align: left !important;
   padding: 40vh 10vw 40vh 10vw;
@@ -81,6 +95,20 @@ span{
   padding-bottom: 10vh!important;
   background: #2f2f2f;
 }
+
+.white{
+  color:white;
+}
+.left{
+  text-align:left;
+}
+.right{
+  text-align:right;
+}
+.header {
+ display: inline-block;
+}
+
 .contact-links{
   display:relative;
   color:white;
@@ -88,14 +116,7 @@ span{
 .contact-title{
   padding-bottom:10vh;
 }
-.section {
-  padding: 20vh 10vw 0vh 10vw;
-  text-align: center;
- }
 
-.header {
-  display: inline-block;
-}
 .line-separator{
   height:1px;
   width:100%;
@@ -109,62 +130,18 @@ span{
   text-align:center;
   background: white;
   border-bottom:2px solid #2f2f2f;
+  padding-top:5vh;
 }
 
 .rectangle{
   border:1px solid #000;
 }
-.title {
-  font: 80px "Merriweather", sans-serif;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 80px;
-}
-.experience-list{
-  display:inline-grid;
-}
-.experience-img{
-}
-
-.experience-desc{
-  padding: 3vh 3vw 3vh 3vw;
-  text-align:left;
-}
-
-.about__links {
-  text-align: center; }
-
-.list {
-  -webkit-padding-start: 0;
-  padding: 0 15px; }
-
-
-.project {
-  height:250px;
-  width:350px;
-  padding: 1vh;
-}
-.project p{
-  font-size: 2vh;
-  text-align: center;
-  line-height: 2.5vh;
-}
-.project-desc{
-  padding:1vh 0.5vw 1vh 0.5vw;
-  text-align: center;
-  background-color: white;
-
-}
 .row {
   padding-top: 3vh;
+  text-align: center;
   display:inline-flex;
+  width: 50vw;
 }
-
-#work:hover,
-#about:hover,
-#projects:hover,
-#contact:hover {
-  cursor: pointer; }
 
 .network{
   padding-top:10vh;
@@ -174,16 +151,64 @@ span{
   padding-left:2vw;
   padding-right:2vw;
 }
-.item {
-  text-align: center;
-  margin: 20px auto; }
 
-.about__link {
-  margin: 0 10px; }
+.about-description{
+  width:20vw;
+  text-align: left;
+}
+.about-facts{
+  width:40vw;
+  text-align: left !important;
+}
+.about-stuff{
+  padding: 0 0 0 0;
+  display:inline-flex;
+}
+.about-intro{
+  padding: 5vh 10vw 7vh 10vw;
+  display:inline-flex;
+}
+
+.experience-list{
+  display:inline-grid;
+}
+
+.experience-desc{
+  padding: 3vh 3vw 3vh 3vw;
+  text-align:left;
+}
+.project-list{
+  padding-top:5vh;
+}
+
+.v-center-container{
+  display: table;
+  vertical-align: middle;
+}
+.v-center{
+  display:table-cell;
+  vertical-align: middle;
+}
+.project-image {
+  height: 35vh;
+  padding: 1vh;
+}
+.image{
+  height: 35vh;
+}
+.project-desc{
+  width:30vw;
+  height: 35vh;
+  padding: 1vh;
+}
+.project-hidden{
+  padding:1vh 0.5vw 1vh 0.5vw;
+  text-align: center;
+  background-color: white;
+}
 
 .nav,
 .about__link,
-.project,
 .item {
   list-style: none; }
 
@@ -208,39 +233,6 @@ span{
 .nav:hover:after {
   width: 100%; }
 
-
-p {
-  text-align: center;
-  font-size: 2vh}
-
-.about__title {
-  text-align: center; }
-
-.about_description{
-  width:20vw;
-  text-align: left;
-}
-.about_facts{
-  width:40vw;
-  text-align: left !important;
-}
-.about_stuff{
-  padding: 0 0 0 0;
-  display:inline-flex;
-}
-.about_intro{
-  padding: 10vh 0 7vh 0;
-  display:inline-flex;
-}
-.section-title {
-  border-width: 0 0 3px 0;
-  display: inline-block;
-  margin-right: 40px; }
-
-a {
-  color: black;
-  text-decoration: none; }
-
 .mailto {
   color: white;
   text-align: center;
@@ -249,68 +241,8 @@ a {
 .press {
   margin-top: 100px; }
 
-.home {
-  margin-bottom: 100px; }
 
-.project__info,
-.project__info--desc {
-  font-weight: normal;
-  text-align: left; }
 
-.project__info {
-  color: #348c45;
-  position: relative; }
-
-.project__info:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background-color: #348c45;
-  content: "";
-  transition: width 0.2s; }
-
-.project__info:hover:after {
-  width: 100%; }
-
-.list-title {
-  font: 80px "Merriweather", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-top: 80px; }
-
-.project__title,
-.project__desc,
-.project__info {
-  display: inline-block;
-  vertical-align: text-top; }
-
-.project__title {
-  text-align: center;
-  position: absolute;
-  right: 50%;
-  font: 26px 'Merriweather', sans-serif;
-  margin-right: 0; }
-
-.project__desc {
-  position: relative;
-  left: 20%;
-  width: 20vw; }
-
-.heading-img {
-  width: 320px;
-  vertical-align: middle;
-  transition: all ease 0.2s;
-  display: inline-block;
-  padding: 0 100px; }
-
-footer {
-  position: fixed;
-  bottom: 2%;
-  right: 2%; }
-  footer a {
-    border-bottom: thin dotted #000000; }
 
 .underline
 .underline-pink,
@@ -364,44 +296,75 @@ footer {
   transition: width 0.2s; }
 
 @media (max-width: 992px) {
-  .title {
-    font-size: 60px;
-    line-height: 64px; }
-  .heading {
-    margin: 80px auto auto; }
-    .heading .header {
-      margin-right: 50px;
-      margin-left: 50px; }
-    .heading .heading-img {
-      padding: 0;
-      width: 300px; }
-  .about_description,
-  .contact__desc {
-    padding: 0 40px; }
-  .project__title,
-  .project__desc,
-  .project__info {
-    display: block;
-    text-align: center; }
-  .project__title {
-    margin: 0 auto;
-    position: initial;
-    width: 300px; }
-  .project__desc {
-    margin-top: 30px;
-    margin: 0 auto;
-    position: initial;
-    padding: 0px 10px; }
-  .project__info {
-    margin: 0; }
-  .project__info--desc {
-    text-align: center; } }
+  .section {
+    padding: 10vh 0 0vh 0;
+    text-align: center;
+   }
+  .header-section{
+    text-align: left !important;
+    padding: 40vh 10vw 40vh 10vw;
+    text-align: center;
+    background: #2f2f2f;
+  }
+
+  h3{
+    display:block;
+    text-align: center;
+
+  }
+  .row {
+    padding-top: 3vh;
+    display:table-row;
+  }
+
+  .project-image {
+    display:inline-table;
+    height: 35vh;
+    padding: 1vh;
+  }
+  .image{
+    height: 35vh;
+  }
+  .project-desc{
+    display:inline-table;
+    width:50vw;
+    padding: 1vh;
+  }
+}
 
 @media (max-width: 592px) {
-  .heading .header {
-    margin-right: 0;
-    margin-left: 0; }
-  .heading .heading-img {
-    width: 270px; }
-  .project__title, .project__desc {
-    width: 300px; } }
+  .section {
+    padding: 10vh 0 0vh 0;
+    text-align: center;
+   }
+  .header-section{
+    text-align: left !important;
+    padding: 40vh 10vw 40vh 10vw;
+    text-align: center;
+    background: #2f2f2f;
+  }
+
+  h3{
+    display:block;
+    text-align: center;
+
+  }
+  .row {
+    padding-top: 3vh;
+    display:table-row;
+  }
+
+  .project-image {
+    display:inline-table;
+    height: 35vh;
+    padding: 1vh;
+  }
+  .image{
+    height: 35vh;
+  }
+  .project-desc{
+    display:inline-table;
+    width:50vw;
+    padding: 1vh;
+  }
+}

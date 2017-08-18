@@ -12,22 +12,22 @@ $(document).ready(function() {
     var contact = $('#contact').position();
     var line1 = $('#line-1').position();
     var line2 = $('#line-2').position();
-
+    console.log(height);
     var interval = 500;
-    if (height > about.top -100) {
-      $('#about').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, interval);
+    if (height > about.top -400) {
+      $('#about').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
-    if (height > work.top -100) {
-      $('#work').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, interval);
+    if (height > work.top -400) {
+      $('#work').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
-    if (height > projects.top -100) {
-      $('#projects').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, interval);
+    if (height > projects.top -400) {
+      $('#projects').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
-    if (height > line1.top -100) {
-      $('#line-1').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, interval);
+    if (height > line1.top -400) {
+      $('#line-1').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
-    if (height > line2.top -100) {
-      $('#line-2').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, interval);
+    if (height > line2.top -400) {
+      $('#line-2').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
   });
@@ -58,6 +58,12 @@ $(document).ready(function() {
         scrollTop: $("#projects").offset().top
     }, 500);
     return false;
+  });
+  $(window).resize(function() {
+    $('.hcaption').hcaptions({
+      effect: "fade",
+      direction: "bottom"
+    });
   });
 
 
