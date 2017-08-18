@@ -19,18 +19,21 @@ h1{
   margin: 0 auto;
   text-align: center;
   line-height: 12vh;
+  font-weight: 400;
 }
 h2{
   font: 8vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 8vh;
+  font-weight: 900;
 }
 h3{
   font: 6vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 6vh;
+  font-weight: 900;
 }
 h4{
   font: 4vh "Merriweather", sans-serif;
@@ -39,7 +42,7 @@ h4{
   line-height: 5vh;
 }
 h5{
-  font: 3vh "Merriweather", sans-serif;
+  font: 3.5vh "Helvetica", sans-serif;
   margin: 0 auto;
   text-align: center;
   line-height: 4vh;
@@ -48,7 +51,14 @@ h6{
   font: 2.5vh "Merriweather", sans-serif;
   margin: 0 auto;
   text-align: center;
+  line-height: 3vh;
+}
+
+p {
+  text-align: center;
+  font: 2.5vh "Helvetica", sans-serif;
   line-height: 2.5vh;
+
 }
 
 span{
@@ -240,9 +250,6 @@ footer a {
 
 .press {
   margin-top: 100px; }
-
-
-
 
 .underline
 .underline-pink,
